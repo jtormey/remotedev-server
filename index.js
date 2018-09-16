@@ -35,6 +35,7 @@ module.exports = function(argv) {
           console.log('[RemoteDev] Start server...');
           console.log(repeat('-', 80) + '\n');
         }
+        options.wsEngine = 'ws';
         resolve(new SocketCluster(options));
       }
     });
